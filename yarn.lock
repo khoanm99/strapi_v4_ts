@@ -2295,10 +2295,22 @@
     node-fetch "2.7.0"
     node-schedule "2.1.0"
 
-"@strapi/typescript-utils@4.21.0", "@strapi/typescript-utils@^4.21.0":
+"@strapi/typescript-utils@4.21.0":
   version "4.21.0"
   resolved "https://registry.yarnpkg.com/@strapi/typescript-utils/-/typescript-utils-4.21.0.tgz#ec516226ea5481be503b3010063d6f8240470a73"
   integrity sha512-JsjWjVrp9N8ztSHiMlM5jVJGfTZsoY2X7ogq38a7m+8nPBlkvMvNfEzPS4wgSKnvxnMs6o88Y87sReS4ddbZdg==
+  dependencies:
+    chalk "4.1.2"
+    cli-table3 "0.6.2"
+    fs-extra "10.0.0"
+    lodash "4.17.21"
+    prettier "2.8.4"
+    typescript "5.2.2"
+
+"@strapi/typescript-utils@^4.21.0":
+  version "4.21.1"
+  resolved "https://registry.yarnpkg.com/@strapi/typescript-utils/-/typescript-utils-4.21.1.tgz#00e573ae60448b0066f42e7ccf503bf017e3c54c"
+  integrity sha512-/zKA7i2rT6JD+Bj/RBErzzUW++wc7Imi5LRpSVx0RIylFgiRka4kzUgj498lloZury9AK0LhHTUcFazhMtXe1g==
   dependencies:
     chalk "4.1.2"
     cli-table3 "0.6.2"
@@ -2733,9 +2745,9 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@16 || 17 || 18":
-  version "18.2.69"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.69.tgz#313ec21891b22bb7646a54cb4bdb8cddb0880271"
-  integrity sha512-W1HOMUWY/1Yyw0ba5TkCV+oqynRjG7BnteBB+B7JmAK7iw3l2SW+VGOxL+akPweix6jk2NNJtyJKpn4TkpfK3Q==
+  version "18.2.70"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.70.tgz#89a37f9e0a6a4931f4259c598f40fd44dd6abf71"
+  integrity sha512-hjlM2hho2vqklPhopNkXkdkeq6Lv8WSZTpr7956zY+3WS5cfYUewtCzsJLsbW5dEv3lfSeQ4W14ZFeKC437JRQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"

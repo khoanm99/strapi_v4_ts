@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_content_galleries",
+  "info": {
+    "displayName": "gallery",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "slider",
+        "grid"
+      ],
+      "default": "slider",
+      "required": true
+    }
+  }
+}
