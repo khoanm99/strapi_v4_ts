@@ -868,13 +868,14 @@ export interface ApiProductProduct extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    slug: Attribute.UID & Attribute.Required;
-    product_category: Attribute.Relation<
+    title: Attribute.String;
+    slug: Attribute.UID<'api::product.product', 'title'>;
+    images: Attribute.Media;
+    product_categories: Attribute.Relation<
       'api::product.product',
-      'manyToOne',
+      'oneToMany',
       'api::product-category.product-category'
     >;
-    title: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -906,9 +907,9 @@ export interface ApiProductCategoryProductCategory
   };
   attributes: {
     title: Attribute.String;
-    products: Attribute.Relation<
+    product: Attribute.Relation<
       'api::product-category.product-category',
-      'oneToMany',
+      'manyToOne',
       'api::product.product'
     >;
     createdAt: Attribute.DateTime;
